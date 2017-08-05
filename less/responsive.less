@@ -1,0 +1,111 @@
+/* desktop queries */
+@media only screen and (min-width:1280px) {
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1279px) {
+
+   footer {
+      .copyright-text,
+      .text-right {
+         text-align: center;
+      }
+   }
+
+}
+
+/* tablet queries */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+  header {
+      .navbar-brand {
+         background: url('../images/brand-sm.png') no-repeat;
+         width: 40px;
+         height: 40px;
+         margin-top: 10px;
+      }
+   }
+
+   .sidebar {
+      margin-left: 0px;
+
+      .adds {
+         margin: auto;
+      }
+
+   }
+
+   footer {
+      .copyright-text,
+      .text-right {
+         text-align: center;
+      }
+
+   }
+
+}
+
+/* mobile queries */
+@media only screen and (max-width:480px) {
+
+   header {
+      .navbar-brand {
+         background: url('../images/brand-sm.png') no-repeat;
+         width: 40px;
+         height: 40px;
+         margin-top: 10px;
+      }
+   }
+
+   #welcome {
+      h1 {
+         font-size: @font-size-h1 - 6;
+      }
+
+      p {
+         font-size: @font-size-base - 2;
+      }
+   }
+
+   #features {
+      .container-info {
+         p {
+            font-size: @font-size-base - 2;
+         }
+
+         h3 {
+            font-size: @font-size-h3 + 2;
+         }
+      }
+   }
+
+   #bombs {
+      .panel-body {
+         font-size: @font-size-h6 + 1;
+      }
+   }
+
+   footer {
+      .copyright-text,
+      .text-right {
+         font-size: @font-size-base - 4;
+         text-align: center;
+      }
+
+      ul#list-contact-info li i,
+      ul#list-contact-info li span {
+         font-size: @font-size-base - 4;
+      }
+
+      #contactForm {
+         label.error,
+         #messageSubmitting,
+         #messageSubmited {
+            font-size: @font-size-base - 4;
+         }
+
+      }
+
+   }
+
+}
